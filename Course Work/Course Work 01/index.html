@@ -3,66 +3,871 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Work 01</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>iCD121 - Week 01 & 02 Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        header {
-            background-color: #83cfef;
-            padding: 20px;
-            font-style: italic;
-            font-size: 24px;
-            color: #0d2bd5;
-            border-radius: 10px;
-            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(135deg, #83cfef, #4a90d9);
+            padding: 30px 20px;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        .section-title {
+            border-left: 5px solid #4a90d9;
+            padding-left: 15px;
+            margin: 40px 0 25px 0;
+            color: #2c3e50;
+        }
+        .tag-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #4a90d9;
+            transition: transform 0.2s;
+        }
+        .tag-box:hover {
+            transform: translateX(5px);
+        }
+        .tag-box code {
+            background: #e9ecef;
+            padding: 2px 10px;
+            border-radius: 5px;
+            color: #d63384;
+            font-size: 1.1rem;
+        }
+        .tag-box .example {
+            background: #2d2d2d;
+            color: #f8f8f8;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+        .tag-box .purpose {
+            color: #495057;
+            margin: 8px 0;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 50px;
+            border-radius: 20px 20px 0 0;
+        }
+        .badge-count {
+            background: #4a90d9;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .list-group-item-custom {
+            background: #f1f9ff;
+            border: none;
+            border-radius: 10px !important;
+            margin-bottom: 8px;
+            padding: 12px 20px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Add the header section -->
+    <!-- ==================== HEADER ==================== -->
     <header>
-        <h1>What is the Internet</h1>
+        <h1>🌐 iCD121 - Internet & HTML Fundamentals</h1>
+        <p>Week 01 & 02 — Assignment Submission</p>
+        <p style="font-size:0.9rem; margin-top:10px;">📌 75+ HTML Tags with Examples • Semantic Structure • Full Coverage</p>
     </header>
-    
-    <!-- <div class="container-fluid">
-        <div class="row border border-primary rounded p-3 m-3">
-            <div class="col-md-6" data-aos="fade-right">
-                <h2>What is the Internet?</h2>
-                <p>The Internet is a global network of computers connected together using standardized communication protocols. It allows billions of devices worldwide to share information, communicate, and access services. Think of it as a "network of networks" that spans the entire planet.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="internet.png" alt="What is the Internet?" style="image-thumbnail; border-radius: 10px;">
-            </div>
 
-        </div>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="container my-5">
 
-    </div> -->
+        <!-- ============================================================ -->
+        <!-- SECTION 1: WEEK 01 & 02 TOPICS SUMMARY                        -->
+        <!-- ============================================================ -->
+        <section>
+            <h2 class="section-title" data-aos="fade-right">📖 Week 01 &amp; 02 — Topic Summary</h2>
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-6">
-                <h1 class="mt-5 fw-bold">The Internet</h1>
-                <h3 class="mt-3 text-primary">Understanding the Internet</h3>
-                <p class="mt-4">The Internet is a vast, global system of interconnected computer networks that communicate through standardized protocols. It connects billions of devices across the world, enabling seamless information sharing, real-time communication, and access to countless digital services. 
-                    In essence, the Internet functions as a "network of networks," spanning the entire planet and forming the foundational infrastructure of modern digital life. It supports a wide range of applications, including the World Wide Web, email, cloud computing, social media, online banking, and streaming services.
-                    The Internet operates without a central governing body, relying instead on distributed systems, routing protocols, and data centers to ensure reliability and efficiency. It has transformed nearly every aspect of human activity—from education and healthcare to business and entertainment—making information instantly accessible and connecting people across geographical, cultural, and linguistic boundaries.
-                    As it continues to evolve with emerging technologies like the Internet of Things (IoT), artificial intelligence, and 5G networks, the Internet remains a dynamic and indispensable part of contemporary society.</p>
-            </div>
-            <div class="col-lg-6 d-lg-block">
-                <div>
-                    <img class="mx-auto w-100" src="internet.png" alt="hero" style="width: 400px; height: 500px;">
+            <!-- What is the Internet? -->
+            <article class="row g-4 mb-5" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <h3 class="text-primary">🌍 What is the Internet?</h3>
+                    <p>The Internet is a vast, global system of interconnected computer networks that communicate through standardized protocols. It connects billions of devices across the world, enabling seamless information sharing, real-time communication, and access to countless digital services. In essence, the Internet functions as a <strong>"network of networks"</strong> spanning the entire planet.</p>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="col-lg-6">
+                    <img src="assets/internet.png" alt="Global Internet Network" class="img-fluid rounded shadow" style="max-height:280px; width:100%; object-fit:cover;">
+                </div>
+            </article>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script> 
+            <!-- How the Internet Works -->
+            <article class="row g-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-12">
+                    <h3 class="text-primary">⚙️ How the Internet Works</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success">Client-Server Model</h5>
+                                    <p class="card-text">Clients (devices) request services from servers (powerful computers that store data and applications). The server responds with the requested information.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success">HTTP (HyperText Transfer Protocol)</h5>
+                                    <p class="card-text">The protocol used to transfer web pages from servers to browsers. It defines how messages are formatted and transmitted.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success">DNS (Domain Name System)</h5>
+                                    <p class="card-text">Translates human-friendly domain names (e.g., google.com) into IP addresses that computers use to identify each other.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Main Services & Daily Life -->
+            <article class="row g-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6">
+                    <h3 class="text-primary">🛠️ Main Services on the Internet</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-custom">🌐 World Wide Web (Websites &amp; Web Apps)</li>
+                        <li class="list-group-item list-group-item-custom">📧 Email (Gmail, Outlook, etc.)</li>
+                        <li class="list-group-item list-group-item-custom">☁️ Cloud Computing (Google Drive, AWS)</li>
+                        <li class="list-group-item list-group-item-custom">📱 Social Media (Facebook, Instagram, Twitter)</li>
+                        <li class="list-group-item list-group-item-custom">💰 Online Banking &amp; E-commerce</li>
+                        <li class="list-group-item list-group-item-custom">🎥 Streaming (YouTube, Netflix, Spotify)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-primary">📱 How the Internet is Used in Daily Life</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-custom">📚 Education — Online courses, research, e-libraries</li>
+                        <li class="list-group-item list-group-item-custom">🏥 Healthcare — Telemedicine, health records</li>
+                        <li class="list-group-item list-group-item-custom">💼 Business — Remote work, video conferencing</li>
+                        <li class="list-group-item list-group-item-custom">🎮 Entertainment — Gaming, music, movies</li>
+                        <li class="list-group-item list-group-item-custom">🏠 Smart Homes — IoT devices, voice assistants</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Web Browsers & DNS Importance -->
+            <article class="row g-4 mb-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6">
+                    <h3 class="text-primary">🌐 Role of Web Browsers</h3>
+                    <p>Web browsers (Chrome, Firefox, Safari, Edge) are software applications that allow users to access and view websites. They interpret HTML, CSS, and JavaScript to render web pages, handle user interactions, and manage cookies, cache, and security.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-primary">🔍 What is DNS &amp; Why is it Important?</h3>
+                    <p><strong>DNS (Domain Name System)</strong> is like the "phonebook of the internet." It translates domain names (e.g., www.example.com) into IP addresses (e.g., 192.168.1.1) so that browsers can load resources. Without DNS, users would have to remember complex numeric IP addresses for every website.</p>
+                </div>
+            </article>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- ============================================================ -->
+        <!-- SECTION 2: 75+ HTML TAGS WITH EXAMPLES                        -->
+        <!-- ============================================================ -->
+        <section>
+            <h2 class="section-title" data-aos="fade-right">🏷️ 75+ HTML Tags — Detailed Reference</h2>
+            <p class="text-muted mb-4">Each tag includes its <strong>purpose</strong>, <strong>when to use</strong>, and a <strong>code example</strong>.</p>
+
+            <div class="badge-count">✅ Total Tags Covered: 80+</div>
+
+            <!-- ====== Document Structure Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">📄 Document Structure Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Declares the document type and HTML version.</div>
+                <div class="purpose"><strong>When to use:</strong> Always the first line in an HTML document.</div>
+                <div class="example">&lt;!DOCTYPE html&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;html&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Root element of an HTML page.</div>
+                <div class="purpose"><strong>When to use:</strong> Wraps all content on the page.</div>
+                <div class="example">&lt;html lang="en"&gt; ... &lt;/html&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;head&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Contains meta-information about the document.</div>
+                <div class="purpose"><strong>When to use:</strong> Place inside &lt;html&gt; before &lt;body&gt;.</div>
+                <div class="example">&lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;title&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Sets the title shown in the browser tab.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;head&gt;.</div>
+                <div class="example">&lt;title&gt;My Website&lt;/title&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;meta&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Provides metadata like charset, viewport, description.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;head&gt;.</div>
+                <div class="example">&lt;meta charset="UTF-8"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;link&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Links external resources like CSS stylesheets.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;head&gt;.</div>
+                <div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;style&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds internal CSS styles.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;head&gt; or inside &lt;body&gt;.</div>
+                <div class="example">&lt;style&gt; body { color: red; } &lt;/style&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;body&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Contains all visible page content.</div>
+                <div class="purpose"><strong>When to use:</strong> After &lt;/head&gt;.</div>
+                <div class="example">&lt;body&gt; &lt;h1&gt;Hello&lt;/h1&gt; &lt;/body&gt;</div>
+            </div>
+
+            <!-- ====== Semantic Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">🧩 Semantic HTML5 Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;header&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines introductory content or navigation.</div>
+                <div class="purpose"><strong>When to use:</strong> At the top of a page or section.</div>
+                <div class="example">&lt;header&gt;&lt;h1&gt;My Site&lt;/h1&gt;&lt;/header&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;main&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents the dominant content of the page.</div>
+                <div class="purpose"><strong>When to use:</strong> Once per page, wrap main content.</div>
+                <div class="example">&lt;main&gt; ... &lt;/main&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;section&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups related content with a theme.</div>
+                <div class="purpose"><strong>When to use:</strong> For chapters, tabs, or thematic groups.</div>
+                <div class="example">&lt;section&gt;&lt;h2&gt;About&lt;/h2&gt;&lt;p&gt;...&lt;/p&gt;&lt;/section&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;article&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents independent, self-contained content.</div>
+                <div class="purpose"><strong>When to use:</strong> Blog posts, news articles, forum posts.</div>
+                <div class="example">&lt;article&gt;&lt;h3&gt;Blog Post&lt;/h3&gt;&lt;p&gt;...&lt;/p&gt;&lt;/article&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;footer&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines footer for a page or section.</div>
+                <div class="purpose"><strong>When to use:</strong> At the bottom of a page or section.</div>
+                <div class="example">&lt;footer&gt;&amp;copy; 2026&lt;/footer&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;nav&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines navigation links.</div>
+                <div class="purpose"><strong>When to use:</strong> For menus or navigation bars.</div>
+                <div class="example">&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;aside&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents content indirectly related to main content.</div>
+                <div class="purpose"><strong>When to use:</strong> Sidebars, pull quotes, advertisements.</div>
+                <div class="example">&lt;aside&gt;&lt;p&gt;Advertisement&lt;/p&gt;&lt;/aside&gt;</div>
+            </div>
+
+            <!-- ====== Text Formatting Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">✍️ Text Formatting Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;h1&gt; to &lt;h6&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Headings from largest (h1) to smallest (h6).</div>
+                <div class="purpose"><strong>When to use:</strong> For titles and subheadings.</div>
+                <div class="example">&lt;h1&gt;Main Title&lt;/h1&gt; &lt;h2&gt;Subtitle&lt;/h2&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;p&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a paragraph.</div>
+                <div class="purpose"><strong>When to use:</strong> For blocks of text.</div>
+                <div class="example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;br&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Inserts a line break.</div>
+                <div class="purpose"><strong>When to use:</strong> For breaking lines without starting a new paragraph.</div>
+                <div class="example">Line 1&lt;br&gt;Line 2</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;hr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a horizontal rule (thematic break).</div>
+                <div class="purpose"><strong>When to use:</strong> To separate content sections.</div>
+                <div class="example">&lt;hr&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;strong&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Indicates strong importance (bold).</div>
+                <div class="purpose"><strong>When to use:</strong> For important text.</div>
+                <div class="example">&lt;strong&gt;Important&lt;/strong&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;b&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Bold text (presentational).</div>
+                <div class="purpose"><strong>When to use:</strong> For styling, not semantic importance.</div>
+                <div class="example">&lt;b&gt;Bold text&lt;/b&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;em&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Emphasized text (italic).</div>
+                <div class="purpose"><strong>When to use:</strong> To add emphasis.</div>
+                <div class="example">&lt;em&gt;Emphasized&lt;/em&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;i&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Italic text (presentational).</div>
+                <div class="purpose"><strong>When to use:</strong> For styling, technical terms, or thoughts.</div>
+                <div class="example">&lt;i&gt;Italic&lt;/i&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;u&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Underlines text.</div>
+                <div class="purpose"><strong>When to use:</strong> For underlined text (use sparingly).</div>
+                <div class="example">&lt;u&gt;Underlined&lt;/u&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;s&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Strikethrough text.</div>
+                <div class="purpose"><strong>When to use:</strong> For deleted or no-longer-accurate text.</div>
+                <div class="example">&lt;s&gt;$100&lt;/s&gt; $80</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;mark&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Highlights text.</div>
+                <div class="purpose"><strong>When to use:</strong> To draw attention.</div>
+                <div class="example">&lt;mark&gt;Highlighted&lt;/mark&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;small&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Makes text smaller (side comments).</div>
+                <div class="purpose"><strong>When to use:</strong> For fine print or legal text.</div>
+                <div class="example">&lt;small&gt;Terms apply&lt;/small&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;sub&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Subscript text.</div>
+                <div class="purpose"><strong>When to use:</strong> Chemical formulas, math.</div>
+                <div class="example">H&lt;sub&gt;2&lt;/sub&gt;O</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;sup&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Superscript text.</div>
+                <div class="purpose"><strong>When to use:</strong> Exponents, ordinal indicators.</div>
+                <div class="example">E=mc&lt;sup&gt;2&lt;/sup&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;blockquote&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a block quotation.</div>
+                <div class="purpose"><strong>When to use:</strong> For longer quoted text.</div>
+                <div class="example">&lt;blockquote&gt;To be or not to be.&lt;/blockquote&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;q&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Inline quotation.</div>
+                <div class="purpose"><strong>When to use:</strong> For short quotes within a sentence.</div>
+                <div class="example">He said &lt;q&gt;Hello&lt;/q&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;cite&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Cites a source or reference.</div>
+                <div class="purpose"><strong>When to use:</strong> For titles of works.</div>
+                <div class="example">&lt;cite&gt;The Great Gatsby&lt;/cite&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;code&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Displays inline code.</div>
+                <div class="purpose"><strong>When to use:</strong> For code snippets in text.</div>
+                <div class="example">Use &lt;code&gt;print()&lt;/code&gt; to output.</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;pre&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Preformatted text (preserves spaces and line breaks).</div>
+                <div class="purpose"><strong>When to use:</strong> For code blocks or poetry.</div>
+                <div class="example">&lt;pre&gt;  def hello():\n    print("Hi")&lt;/pre&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;abbr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines an abbreviation or acronym.</div>
+                <div class="purpose"><strong>When to use:</strong> With title attribute for full form.</div>
+                <div class="example">&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;address&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines contact information.</div>
+                <div class="purpose"><strong>When to use:</strong> For author/contact details.</div>
+                <div class="example">&lt;address&gt;email@example.com&lt;/address&gt;</div>
+            </div>
+
+            <!-- ====== List Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">📋 List Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;ul&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Unordered (bullet) list.</div>
+                <div class="purpose"><strong>When to use:</strong> For items without order.</div>
+                <div class="example">&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;ol&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Ordered (numbered) list.</div>
+                <div class="purpose"><strong>When to use:</strong> For sequential items.</div>
+                <div class="example">&lt;ol&gt;&lt;li&gt;Step 1&lt;/li&gt;&lt;/ol&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;li&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> List item inside &lt;ul&gt; or &lt;ol&gt;.</div>
+                <div class="purpose"><strong>When to use:</strong> For each item in a list.</div>
+                <div class="example">&lt;li&gt;Apple&lt;/li&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;dl&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Definition list.</div>
+                <div class="purpose"><strong>When to use:</strong> For terms and definitions.</div>
+                <div class="example">&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Definition&lt;/dd&gt;&lt;/dl&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;dt&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Term in a definition list.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;dl&gt;.</div>
+                <div class="example">&lt;dt&gt;HTML&lt;/dt&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;dd&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Definition description in a definition list.</div>
+                <div class="purpose"><strong>When to use:</strong> After &lt;dt&gt;.</div>
+                <div class="example">&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;</div>
+            </div>
+
+            <!-- ====== Link & Media Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">🔗 Link &amp; Media Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;a&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a hyperlink.</div>
+                <div class="purpose"><strong>When to use:</strong> For navigation.</div>
+                <div class="example">&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;img&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds an image.</div>
+                <div class="purpose"><strong>When to use:</strong> To display images.</div>
+                <div class="example">&lt;img src="photo.jpg" alt="Description"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;picture&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Provides multiple image sources for responsive design.</div>
+                <div class="purpose"><strong>When to use:</strong> For art direction or different resolutions.</div>
+                <div class="example">&lt;picture&gt;&lt;source srcset="large.jpg" media="(min-width:800px)"&gt;&lt;img src="small.jpg"&gt;&lt;/picture&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;video&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds a video.</div>
+                <div class="purpose"><strong>When to use:</strong> To play video files.</div>
+                <div class="example">&lt;video controls&gt;&lt;source src="movie.mp4"&gt;&lt;/video&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;audio&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds audio.</div>
+                <div class="purpose"><strong>When to use:</strong> To play audio files.</div>
+                <div class="example">&lt;audio controls&gt;&lt;source src="song.mp3"&gt;&lt;/audio&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;source&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Specifies media sources for &lt;picture&gt;, &lt;video&gt;, &lt;audio&gt;.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;picture&gt;, &lt;video&gt;, or &lt;audio&gt;.</div>
+                <div class="example">&lt;source srcset="image.webp" type="image/webp"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;track&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Adds subtitles or captions to video/audio.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;video&gt; or &lt;audio&gt;.</div>
+                <div class="example">&lt;track kind="captions" src="captions.vtt"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;iframe&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds another HTML page within the current page.</div>
+                <div class="purpose"><strong>When to use:</strong> For embedded videos, maps, or external content.</div>
+                <div class="example">&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</div>
+            </div>
+
+            <!-- ====== Table Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">📊 Table Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;table&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a table.</div>
+                <div class="purpose"><strong>When to use:</strong> For tabular data.</div>
+                <div class="example">&lt;table&gt;...&lt;/table&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;thead&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups header rows in a table.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;table&gt;.</div>
+                <div class="example">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;tbody&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups body rows in a table.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;table&gt;.</div>
+                <div class="example">&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;tfoot&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups footer rows in a table.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;table&gt;.</div>
+                <div class="example">&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;tr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a table row.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;table&gt;.</div>
+                <div class="example">&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;th&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a table header cell.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;tr&gt; for headings.</div>
+                <div class="example">&lt;th&gt;Name&lt;/th&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;td&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a table data cell.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;tr&gt; for data.</div>
+                <div class="example">&lt;td&gt;John Doe&lt;/td&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;caption&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Adds a caption to a table.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;table&gt;.</div>
+                <div class="example">&lt;caption&gt;Student List&lt;/caption&gt;</div>
+            </div>
+
+            <!-- ====== Form Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">📝 Form Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;form&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines an HTML form for user input.</div>
+                <div class="purpose"><strong>When to use:</strong> To collect user data.</div>
+                <div class="example">&lt;form action="/submit" method="POST"&gt;...&lt;/form&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;input&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates an input field.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;form&gt;.</div>
+                <div class="example">&lt;input type="text" name="username"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;label&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Labels an input field.</div>
+                <div class="purpose"><strong>When to use:</strong> For accessibility.</div>
+                <div class="example">&lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input id="name"&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;select&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a dropdown list.</div>
+                <div class="purpose"><strong>When to use:</strong> For selecting from options.</div>
+                <div class="example">&lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;option&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines an option in a dropdown.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;select&gt;.</div>
+                <div class="example">&lt;option value="1"&gt;One&lt;/option&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;optgroup&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups options in a dropdown.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;select&gt;.</div>
+                <div class="example">&lt;optgroup label="Fruits"&gt;&lt;option&gt;Apple&lt;/option&gt;&lt;/optgroup&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;textarea&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a multi-line text input.</div>
+                <div class="purpose"><strong>When to use:</strong> For longer text like comments.</div>
+                <div class="example">&lt;textarea rows="4" cols="50"&gt;&lt;/textarea&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;button&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a clickable button.</div>
+                <div class="purpose"><strong>When to use:</strong> For form submission or actions.</div>
+                <div class="example">&lt;button type="submit"&gt;Send&lt;/button&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;fieldset&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups related form elements.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;form&gt;.</div>
+                <div class="example">&lt;fieldset&gt;&lt;legend&gt;Personal Info&lt;/legend&gt;...&lt;/fieldset&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;legend&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a caption for a &lt;fieldset&gt;.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;fieldset&gt;.</div>
+                <div class="example">&lt;legend&gt;Details&lt;/legend&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;datalist&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Provides autocomplete suggestions for an input.</div>
+                <div class="purpose"><strong>When to use:</strong> With list attribute on &lt;input&gt;.</div>
+                <div class="example">&lt;input list="browsers"&gt;&lt;datalist id="browsers"&gt;&lt;option value="Chrome"&gt;&lt;/datalist&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;output&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Displays the result of a calculation.</div>
+                <div class="purpose"><strong>When to use:</strong> After user interaction.</div>
+                <div class="example">&lt;output name="result"&gt;0&lt;/output&gt;</div>
+            </div>
+
+            <!-- ====== Interactive & Misc Tags ====== -->
+            <h4 class="mt-4 mb-3 text-secondary">⚡ Interactive &amp; Miscellaneous Tags</h4>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;details&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Creates a disclosure widget.</div>
+                <div class="purpose"><strong>When to use:</strong> For collapsible content.</div>
+                <div class="example">&lt;details&gt;&lt;summary&gt;More info&lt;/summary&gt;&lt;p&gt;Details...&lt;/p&gt;&lt;/details&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;summary&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines the visible heading for &lt;details&gt;.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;details&gt;.</div>
+                <div class="example">&lt;summary&gt;Click to expand&lt;/summary&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;dialog&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines a dialog box.</div>
+                <div class="purpose"><strong>When to use:</strong> For modals or alerts.</div>
+                <div class="example">&lt;dialog open&gt;This is a dialog.&lt;/dialog&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;progress&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents progress of a task.</div>
+                <div class="purpose"><strong>When to use:</strong> For loading bars.</div>
+                <div class="example">&lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;meter&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents a scalar measurement.</div>
+                <div class="purpose"><strong>When to use:</strong> For disk usage, ratings, etc.</div>
+                <div class="example">&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;time&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents a specific time or date.</div>
+                <div class="purpose"><strong>When to use:</strong> For machine-readable dates.</div>
+                <div class="example">&lt;time datetime="2026-06-26"&gt;June 26, 2026&lt;/time&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;canvas&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Draws graphics via JavaScript.</div>
+                <div class="purpose"><strong>When to use:</strong> For dynamic graphics, games, charts.</div>
+                <div class="example">&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;svg&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds scalable vector graphics.</div>
+                <div class="purpose"><strong>When to use:</strong> For logos, icons, illustrations.</div>
+                <div class="example">&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" fill="red" /&gt;&lt;/svg&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;figure&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups media content with a caption.</div>
+                <div class="purpose"><strong>When to use:</strong> For images, diagrams with captions.</div>
+                <div class="example">&lt;figure&gt;&lt;img src="chart.png"&gt;&lt;figcaption&gt;Chart 1&lt;/figcaption&gt;&lt;/figure&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;figcaption&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Caption for a &lt;figure&gt;.</div>
+                <div class="purpose"><strong>When to use:</strong> Inside &lt;figure&gt;.</div>
+                <div class="example">&lt;figcaption&gt;Figure 1: Growth Rate&lt;/figcaption&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;main&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Main content of the document.</div>
+                <div class="purpose"><strong>When to use:</strong> Once per page, excludes sidebars/header/footer.</div>
+                <div class="example">&lt;main&gt;&lt;h1&gt;Welcome&lt;/h1&gt;&lt;/main&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;div&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Generic block-level container.</div>
+                <div class="purpose"><strong>When to use:</strong> For layout and styling.</div>
+                <div class="example">&lt;div class="container"&gt;...&lt;/div&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;span&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Generic inline container.</div>
+                <div class="purpose"><strong>When to use:</strong> For styling part of text.</div>
+                <div class="example">&lt;span style="color:red;"&gt;red&lt;/span&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;wbr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Suggests a line break opportunity.</div>
+                <div class="purpose"><strong>When to use:</strong> For long URLs/words.</div>
+                <div class="example">Super&lt;wbr&gt;Long&lt;wbr&gt;Word</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;kbd&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents keyboard input.</div>
+                <div class="purpose"><strong>When to use:</strong> For shortcuts or key names.</div>
+                <div class="example">Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;samp&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents sample output.</div>
+                <div class="purpose"><strong>When to use:</strong> For program output.</div>
+                <div class="example">&lt;samp&gt;Error 404&lt;/samp&gt;</div>
+            </div>
+
+            <div class="tag-box" data-aos="fade-up">
+                <code>&lt;var&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Represents a variable.</div>
+                <div class="purpose"><strong>When to use:</strong> In math or programming contexts.</div>
+                <div class="example">&lt;var&gt;x&lt;/var&gt; = 10</div>
+            </div>
+
+            <!-- Summary count -->
+            <div class="alert alert-success mt-4" data-aos="fade-up">
+                <strong>✅ Total Tags Covered:</strong> 80+ tags with purpose, usage, and examples.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p><strong>iCD121 - IT Fundamentals</strong></p>
+        <p>Week 01 &amp; 02 Assignment | Submitted by: [Your Name]</p>
+        <p>&copy; 2026 — All rights reserved.</p>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>
