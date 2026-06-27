@@ -96,8 +96,19 @@
 // console.log(result);
 
 ///////////////////////////////ARRAYS///////////////////////////
-let numbers = [1,2,3,4,5];
+// let numbers = [1,2,3,4,5];
 
-for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i]);
-}   
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i]);
+// }   
+
+
+
+/////////////////////////////OBJECTS///////////////////////////////
+let customer = {
+    name: "John",
+    age: 30,
+    email: "john@example.com"
+};
+
+console.log(customer);
