@@ -1,15 +1,36 @@
-let name = "Githmi Thathsarani";
-let age = 20;
-let isAfterAL = "false";
-let customers = [];
-let customerList = {};
+let name = "Saman";
+let age = 18;
+
+name = "Ranil";
 
 console.log(name);
 console.log(age);
 
+alert("Hello ICET");
+
+let value = "10";
+console.log(typeof value);
+
+// Arithmetic operators
+// + | - | * | /
 let x = 10;
-let y = "10";
+let y = 20;
+let z = x / y;
 
-console.log(x == y);
+console.log(z);
 
-alert("Hello, " + name + "! You are " + age + " years old.");
+// Comparison operators
+// > | < | >= | <= | == | !=
+// >== | <== | === | !==
+let a = 11;
+let b = "11";
+
+console.log(a === b);
+
+// Logical operators
+// && | || | !
+if (!false) {
+    console.log("true");
+} else {
+    console.log("false");
+}
