@@ -1,1 +1,3 @@
-console.log("Hello, World!");
+let name = "Githmi Thathsarani";
+
+console.log(name);
