@@ -2,7 +2,7 @@
 //-------------------Js wala Object  hadana pradana krama 2k----------------------//
 
 
-//--------1. Class  hadala----------------//
+//--------1. Object Class hadala----------------//
 // class Customer{
 //     name;
 //     age;
@@ -20,14 +20,26 @@
 
 // ---------------------------------------------
 
-//--------2. Object  hadala----------------//
+//--------2. value eka assign karala object  hadala----------------//
 let customer2= {
     name: "John",
     age: 25,
-    address: "New York"
-};
-console.log(customer2);
+    address: "New York",
+    item: ["item1", "item2", "item3"], // array eka hadala object ekata assign karala thiyenawa
+    farher: {                           // object ekak hadala object ekata assign karala thiyenawa
+        name: "Peter",
+        age: 50,
+        address: "New York"
+    }
 
+};
+console.log(customer2.name);
+console.log(customer2.age);
+console.log(customer2.address);
+console.log(customer2.item[0]);
+console.log(customer2.farher.name);
+console.log(customer2.farher.age);
+console.log(customer2.farher.address);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
