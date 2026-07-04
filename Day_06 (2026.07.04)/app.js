@@ -128,24 +128,84 @@
 
 ////////////////////////////////////////////////////////////////////
 
-let customers = [];
+// let customers = [];
 
-function btnAddCustomerOnAction() {
+// function btnAddCustomerOnAction() {
+//     let txtName = document.getElementById("txtName").value;
+//     let txtAddress = document.getElementById("txtAddress").value;
+//     let txtAge = document.getElementById("txtAge").value;
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtSalary = document.getElementById("txtSalary").value;
+
+//     let customer = {
+//         name: txtName,
+//         address: txtAddress,
+//         age: txtAge,
+//         email: txtEmail,
+//         salary: txtSalary
+//     }
+
+//     customers.push(customer);
+//     console.log(customers);
+    
+// }
+
+
+///////////////////////////////////////////////////////////////////////
+
+// let customers = [];
+
+// function btnAddCustomerOnAction() { 
+// }
+
+// function btnViewCustomerOnAction() {
+//     let tblCustomer = document.getElementById("tblCustomer");
+//     tblCustomer.innerHTML += `<tr>
+//         <td>${customers[0].name}</td>
+//         <td>${customers[0].address}</td>
+//         <td>${customers[0].age}</td>
+//         <td>${customers[0].email}</td>
+//         <td>${customers[0].salary}</td>
+//     </tr>`;
+
+
+////////////////////////////////////////////////////////////////////////
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
     let txtName = document.getElementById("txtName").value;
     let txtAddress = document.getElementById("txtAddress").value;
     let txtAge = document.getElementById("txtAge").value;
     let txtEmail = document.getElementById("txtEmail").value;
     let txtSalary = document.getElementById("txtSalary").value;
 
-    let customer = {
-        name: txtName,
-        address: txtAddress,
-        age: txtAge,
-        email: txtEmail,
-        salary: txtSalary
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
     }
 
-    customers.push(customer);
-    console.log(customers);
+    customerList.push(customer);
+
+    console.log(customerList);
+      
+}
+
+function loadTable(){
+    let tblCustomers = document.getElementById("tblCustomers");
+
+    tblCustomers.innerHTML+=`<tr>
+            <td>Saman</td>
+            <td>Walana</td>
+            <td>15</td>
+            <td>saman@email.com</td>
+            <td>750000</td>
+        </tr>`
+
+    console.log(tblCustomers);
     
 }
+
