@@ -21,12 +21,38 @@
 // ---------------------------------------------
 
 //--------2. value eka assign karala object  hadala----------------//
-let customer2= {
+let customer2 = {
     name: "John",
     age: 25,
     address: "New York",
-    item: ["item1", "item2", "item3"], // array eka hadala object ekata assign karala thiyenawa
-    farher: {                           // object ekak hadala object ekata assign karala thiyenawa
+    items: [                                 // array eka hadala object ekata assign karala thiyenawa
+        {
+            id: 1,
+            name: 'variant1',
+            price: 100,
+            variants: [
+                {
+                    id: 1,
+                    name: 'variant1',
+                    price: 100,
+                },
+                {
+                    id: 2,
+                    name: 'variant2',
+                }
+            ]
+        },
+        {
+            id: 2,
+            name: 'variant2',
+            price: 200
+        }, {
+            id: 3,
+            name: 'variant3',
+            price: 300
+        }
+    ], 
+    farher: {                           // object ekak hadala object ekata assign karala thiyenawa🚀
         name: "Peter",
         age: 50,
         address: "New York"
@@ -36,7 +62,7 @@ let customer2= {
 console.log(customer2.name);
 console.log(customer2.age);
 console.log(customer2.address);
-console.log(customer2.item[0]);
+console.log(customer2.items[0].variants[0].name);
 console.log(customer2.farher.name);
 console.log(customer2.farher.age);
 console.log(customer2.farher.address);
