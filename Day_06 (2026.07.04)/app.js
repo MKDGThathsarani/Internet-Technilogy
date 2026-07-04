@@ -101,30 +101,51 @@
 
 ////////////////////////////////////////////////////////////
 
-function changeHeading() {
-    let txtInput = document.getElementById("inputText");
-    let heading = document.getElementById("heading");
-    heading.innerText= txtInput.value;
-    console.log(txtInput.value);
-}
+// function changeHeading() {
+//     let txtInput = document.getElementById("inputText");
+//     let heading = document.getElementById("heading");
+//     heading.innerText= txtInput.value;
+//     console.log(txtInput.value);
+// }
 
-function Addcalculate() {
-    let num1 = parseInt(document.getElementById("inputText").value);
-    let num2 = parseInt(document.getElementById("inputText").value);
-    let result = num1 + num2;
-    console.log(result);
-    document.getElementById("Addition").value = result;
-}
+// function Addcalculate() {
+//     let num1 = parseInt(document.getElementById("inputText").value);
+//     let num2 = parseInt(document.getElementById("inputText").value);
+//     let result = num1 + num2;
+//     console.log(result);
+//     document.getElementById("Addition").value = result;
+// }
 
-function Subtractcalculate() {
-    let num1 = parseInt(document.getElementById("inputText").value);
-    let num2 = parseInt(document.getElementById("inputText").value);
-    let result = num1 - num2;
-    console.log(result);
-    document.getElementById("Subtraction").value = result;
-}
+// function Subtractcalculate() {
+//     let num1 = parseInt(document.getElementById("inputText").value);
+//     let num2 = parseInt(document.getElementById("inputText").value);
+//     let result = num1 - num2;
+//     console.log(result);
+//     document.getElementById("Subtraction").value = result;
+// }
 
 
 
 ////////////////////////////////////////////////////////////////////
 
+let customers = [];
+
+function btnAddCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer = {
+        name: txtName,
+        address: txtAddress,
+        age: txtAge,
+        email: txtEmail,
+        salary: txtSalary
+    }
+
+    customers.push(customer);
+    console.log(customers);
+    
+}
