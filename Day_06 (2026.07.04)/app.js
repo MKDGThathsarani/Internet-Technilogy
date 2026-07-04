@@ -73,9 +73,20 @@
 //document.write("<h1>Hello World! </h1>");
 console.log(document.title);
 let heading = document.getElementById("heading");
+COUNT = 0;
 
 //heading.innerHTML = "Day 06 - Dom Manipulation";
 function changeHeading() {
-    heading.innerHTML = "Heading Changed!";
+    COUNT++;
+    heading.innerHTML = "Heading Changed!" + COUNT;
+    console.log("Heading Changed!");
+    
+}
+
+function changeHeadingDOWN() {
+    COUNT--;
+    heading.innerHTML = "Heading Changed!" + COUNT;
     console.log("Heading Changed!");
 }
+
+
