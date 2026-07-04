@@ -70,6 +70,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //---------------------------Dom/ Dom maniqulation-------------------------
-document.write("<h1>Hello World! </h1>");
+//document.write("<h1>Hello World! </h1>");
 
-console.log(document.title);
+let heading = document.getElementById("heading");
+
+console.log(heading);
