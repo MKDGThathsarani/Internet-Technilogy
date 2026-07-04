@@ -71,22 +71,47 @@
 
 //---------------------------Dom/ Dom maniqulation-------------------------
 //document.write("<h1>Hello World! </h1>");
-console.log(document.title);
-let heading = document.getElementById("heading");
-COUNT = 0;
+// console.log(document.title);
+// let heading = document.getElementById("heading");
+// COUNT = 0;
 
-//heading.innerHTML = "Day 06 - Dom Manipulation";
-function changeHeading() {
-    COUNT++;
-    heading.innerHTML = "Heading Changed!" + COUNT;
-    console.log("Heading Changed!");
+// //heading.innerHTML = "Day 06 - Dom Manipulation";
+// function changeHeading() {
+//     COUNT++;
+//     heading.innerHTML = "Heading Changed!" + COUNT;
+//     console.log("Heading Changed!");
     
+// }
+
+// function changeHeadingDOWN() {
+//     COUNT--;
+//     heading.innerHTML = "Heading Changed!" + COUNT;
+//     console.log("Heading Changed!");
+// }
+
+// let heading = document.getElementById("heading");
+
+// function changeHeading() {
+//     let txtInput = document.getElementById("inputText");
+//     heading.innerText= txtInput.value;
+//     console.log(txtInput.value);
+
+
+// }
+
+////////////////////////////////////////////////////////////
+
+function changeHeading() {
+    let txtInput = document.getElementById("inputText");
+    let heading = document.getElementById("heading");
+    heading.innerText= txtInput.value;
+    console.log(txtInput.value);
 }
 
-function changeHeadingDOWN() {
-    COUNT--;
-    heading.innerHTML = "Heading Changed!" + COUNT;
-    console.log("Heading Changed!");
+function calculate() {
+    let num1 = parseFloat(document.getElementById("inputText").value);
+    let num2 = parseFloat(document.getElementById("inputText").value);
+    let result = num1 + num2;
+    console.log(result);
 }
-
 
