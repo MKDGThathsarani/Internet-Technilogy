@@ -108,10 +108,23 @@ function changeHeading() {
     console.log(txtInput.value);
 }
 
-function calculate() {
-    let num1 = parseFloat(document.getElementById("inputText").value);
-    let num2 = parseFloat(document.getElementById("inputText").value);
+function Addcalculate() {
+    let num1 = parseInt(document.getElementById("inputText").value);
+    let num2 = parseInt(document.getElementById("inputText").value);
     let result = num1 + num2;
     console.log(result);
+    document.getElementById("Addition").value = result;
 }
+
+function Subtractcalculate() {
+    let num1 = parseInt(document.getElementById("inputText").value);
+    let num2 = parseInt(document.getElementById("inputText").value);
+    let result = num1 - num2;
+    console.log(result);
+    document.getElementById("Subtraction").value = result;
+}
+
+
+
+////////////////////////////////////////////////////////////////////
 
