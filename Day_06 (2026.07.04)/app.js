@@ -74,4 +74,8 @@
 console.log(document.title);
 let heading = document.getElementById("heading");
 
-heading.innerHTML = "Day 06 - Dom Manipulation";
+//heading.innerHTML = "Day 06 - Dom Manipulation";
+function changeHeading() {
+    heading.innerHTML = "Heading Changed!";
+    console.log("Heading Changed!");
+}
