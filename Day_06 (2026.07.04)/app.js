@@ -72,4 +72,4 @@
 //---------------------------Dom/ Dom maniqulation-------------------------
 document.write("<h1>Hello World! </h1>");
 
-console.log(document);
+console.log(document.title);
