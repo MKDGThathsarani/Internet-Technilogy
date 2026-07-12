@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Work - iCD121</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+        }
+
+        /* Header Style */
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Section Titles */
+        .section-title {
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin: 40px 0 25px 0;
+            color: #2c3e50;
+        }
+
+        /* Tag Cards */
+        .tag-card {
+            background: white;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid #007bff;
+            transition: transform 0.2s;
+        }
+        .tag-card:hover {
+            transform: translateX(6px);
+        }
+        .tag-card code {
+            background: #e9ecef;
+            padding: 3px 12px;
+            border-radius: 5px;
+            color: #d63384;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        .tag-card .purpose {
+            color: #495057;
+            margin: 6px 0;
+            font-size: 0.95rem;
+        }
+        .tag-card .example {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            margin-top: 8px;
+            overflow-x: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        /* Badge */
+        .badge-count {
+            background: #007bff;
+            color: white;
+            padding: 4px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Image */
+        .hero-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* List styles */
+        .custom-list li {
+            background: #e9f2ff;
+            border: none;
+            border-radius: 8px !important;
+            margin-bottom: 6px;
+            padding: 10px 18px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+        <h1>iCD121 - Internet Technology</h1>
+        <p>Week 01 and 02 | Course Work Assignment</p>
+        <p style="font-size:0.9rem;">75+ HTML Tags | Semantic Structure | Full Topic Coverage</p>
+    </header>
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main class="container my-4">
+
+        <!-- ========================================================== -->
+        <!-- SECTION 1: WEEK 01 AND 02 TOPICS SUMMARY                    -->
+        <!-- ========================================================== -->
+        <section>
+            <h2 class="section-title">Understanding the Internet</h2>
+
+            <!-- What is the Internet? -->
+            <article class="row g-4 mb-4">
+                <div class="col-md-7">
+                    <h3 class="text-primary">What is the Internet?</h3>
+                    <p>The Internet is a vast, global system of interconnected computer networks that communicate using standardized protocols. It connects billions of devices worldwide, enabling information sharing, real-time communication, and access to digital services. Simply put, it is a "network of networks" that spans the entire planet.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/internet.png" alt="Internet" class="hero-img" style="max-height:200px; width:100%; object-fit:cover;">
+                </div>
+            </article>
+
+            <!-- How the Internet Works -->
+            <article class="mb-4">
+                <h3 class="text-primary">How the Internet Works</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Client-Server Model</h5>
+                                <p class="card-text">Clients (devices) request services from servers (powerful computers). Servers respond with the requested data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">HTTP</h5>
+                                <p class="card-text">HyperText Transfer Protocol is used to transfer web pages from servers to browsers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">DNS</h5>
+                                <p class="card-text">Domain Name System translates domain names (like google.com) into IP addresses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Main Services and Daily Life -->
+            <article class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h3 class="text-primary">Main Services on the Internet</h3>
+                    <ul class="list-group custom-list">
+                        <li class="list-group-item">World Wide Web</li>
+                        <li class="list-group-item">Email</li>
+                        <li class="list-group-item">Cloud Computing</li>
+                        <li class="list-group-item">Social Media</li>
+                        <li class="list-group-item">Online Banking</li>
+                        <li class="list-group-item">Streaming (YouTube, Netflix)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-primary">Internet in Daily Life</h3>
+                    <ul class="list-group custom-list">
+                        <li class="list-group-item">Education - Online courses</li>
+                        <li class="list-group-item">Healthcare - Telemedicine</li>
+                        <li class="list-group-item">Business - Remote work</li>
+                        <li class="list-group-item">Entertainment - Gaming</li>
+                        <li class="list-group-item">Smart Homes - IoT devices</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Web Browsers and DNS -->
+            <article class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h3 class="text-primary">Role of Web Browsers</h3>
+                    <p>Web browsers (Chrome, Firefox, Edge, Safari) are software applications that allow users to access websites. They interpret HTML, CSS, and JavaScript to display web pages.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-primary">What is DNS and Why is it Important?</h3>
+                    <p>DNS is like the "phonebook of the internet." It converts domain names into IP addresses so browsers can load resources. Without DNS, we would have to remember numbers like 192.168.1.1 for every website.</p>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- SECTION 2: 75+ HTML TAGS WITH EXAMPLES                      -->
+        <!-- ========================================================== -->
+        <section>
+            <h2 class="section-title">75+ HTML Tags - Reference</h2>
+            <p class="text-muted mb-3">Each tag includes its purpose, when to use, and an example.</p>
+
+            <div class="badge-count">Total: 80+ Tags</div>
+
+            <!-- Document Structure -->
+            <h4 class="mt-4 text-secondary">Document Structure</h4>
+
+            <div class="tag-card">
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Declares the HTML version.</div>
+                <div class="purpose"><strong>When:</strong> First line of every HTML page.</div>
+                <div class="example">&lt;!DOCTYPE html&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;html&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Root element of the page.</div>
+                <div class="purpose"><strong>When:</strong> Wraps all content.</div>
+                <div class="example">&lt;html lang="en"&gt; ... &lt;/html&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;head&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Contains meta information.</div>
+                <div class="purpose"><strong>When:</strong> Before body.</div>
+                <div class="example">&lt;head&gt;&lt;title&gt;Page&lt;/title&gt;&lt;/head&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;title&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Sets the browser tab title.</div>
+                <div class="purpose"><strong>When:</strong> Inside head.</div>
+                <div class="example">&lt;title&gt;My Website&lt;/title&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;meta&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Provides metadata like charset.</div>
+                <div class="purpose"><strong>When:</strong> Inside head.</div>
+                <div class="example">&lt;meta charset="UTF-8"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;link&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Links external CSS files.</div>
+                <div class="purpose"><strong>When:</strong> Inside head.</div>
+                <div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;style&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds internal CSS.</div>
+                <div class="purpose"><strong>When:</strong> Inside head.</div>
+                <div class="example">&lt;style&gt; body { color: blue; } &lt;/style&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;body&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Contains visible content.</div>
+                <div class="purpose"><strong>When:</strong> After head.</div>
+                <div class="example">&lt;body&gt; &lt;h1&gt;Hello&lt;/h1&gt; &lt;/body&gt;</div>
+            </div>
+
+            <!-- Semantic Tags -->
+            <h4 class="mt-4 text-secondary">Semantic HTML Tags</h4>
+
+            <div class="tag-card">
+                <code>&lt;header&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Defines introductory content.</div>
+                <div class="purpose"><strong>When:</strong> Top of page or section.</div>
+                <div class="example">&lt;header&gt;&lt;h1&gt;My Site&lt;/h1&gt;&lt;/header&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;main&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Main content of the page.</div>
+                <div class="purpose"><strong>When:</strong> Once per page.</div>
+                <div class="example">&lt;main&gt; ... &lt;/main&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;section&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups related content.</div>
+                <div class="purpose"><strong>When:</strong> Thematic grouping.</div>
+                <div class="example">&lt;section&gt;&lt;h2&gt;About&lt;/h2&gt;&lt;/section&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;article&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Self-contained content.</div>
+                <div class="purpose"><strong>When:</strong> Blog posts, news.</div>
+                <div class="example">&lt;article&gt;&lt;h3&gt;Post&lt;/h3&gt;&lt;/article&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;footer&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Footer for page or section.</div>
+                <div class="purpose"><strong>When:</strong> Bottom of page.</div>
+                <div class="example">&lt;footer&gt;copy; 2026&lt;/footer&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;nav&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Navigation links.</div>
+                <div class="purpose"><strong>When:</strong> For menus.</div>
+                <div class="example">&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;aside&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Sidebar content.</div>
+                <div class="purpose"><strong>When:</strong> Related but not main.</div>
+                <div class="example">&lt;aside&gt;Advertisement&lt;/aside&gt;</div>
+            </div>
+
+            <!-- Text Formatting -->
+            <h4 class="mt-4 text-secondary">Text Formatting</h4>
+
+            <div class="tag-card">
+                <code>&lt;h1&gt; to &lt;h6&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Headings (largest to smallest).</div>
+                <div class="purpose"><strong>When:</strong> Titles and subheadings.</div>
+                <div class="example">&lt;h1&gt;Title&lt;/h1&gt; &lt;h2&gt;Subtitle&lt;/h2&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;p&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Paragraph.</div>
+                <div class="purpose"><strong>When:</strong> For text blocks.</div>
+                <div class="example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;br&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Line break.</div>
+                <div class="purpose"><strong>When:</strong> To break a line.</div>
+                <div class="example">Line 1<br>Line 2</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;hr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Horizontal rule.</div>
+                <div class="purpose"><strong>When:</strong> To separate sections.</div>
+                <div class="example">&lt;hr&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;strong&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Important text (bold).</div>
+                <div class="purpose"><strong>When:</strong> For emphasis.</div>
+                <div class="example">&lt;strong&gt;Important&lt;/strong&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;b&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Bold text.</div>
+                <div class="purpose"><strong>When:</strong> For styling.</div>
+                <div class="example">&lt;b&gt;Bold&lt;/b&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;em&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Emphasized text (italic).</div>
+                <div class="purpose"><strong>When:</strong> For stress emphasis.</div>
+                <div class="example">&lt;em&gt;Emphasized&lt;/em&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;i&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Italic text.</div>
+                <div class="purpose"><strong>When:</strong> For styling or terms.</div>
+                <div class="example">&lt;i&gt;Italic&lt;/i&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;u&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Underline text.</div>
+                <div class="purpose"><strong>When:</strong> For underlined text.</div>
+                <div class="example">&lt;u&gt;Underlined&lt;/u&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;s&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Strikethrough.</div>
+                <div class="purpose"><strong>When:</strong> For deleted text.</div>
+                <div class="example">&lt;s&gt;$100&lt;/s&gt; $80</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;mark&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Highlight text.</div>
+                <div class="purpose"><strong>When:</strong> To draw attention.</div>
+                <div class="example">&lt;mark&gt;Highlighted&lt;/mark&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;small&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Smaller text.</div>
+                <div class="purpose"><strong>When:</strong> Fine print.</div>
+                <div class="example">&lt;small&gt;Terms apply&lt;/small&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;sub&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Subscript.</div>
+                <div class="purpose"><strong>When:</strong> Chemical formulas.</div>
+                <div class="example">H&lt;sub&gt;2&lt;/sub&gt;O</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;sup&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Superscript.</div>
+                <div class="purpose"><strong>When:</strong> Exponents.</div>
+                <div class="example">E=mc&lt;sup&gt;2&lt;/sup&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;blockquote&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Block quotation.</div>
+                <div class="purpose"><strong>When:</strong> For long quotes.</div>
+                <div class="example">&lt;blockquote&gt;To be or not.&lt;/blockquote&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;q&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Inline quote.</div>
+                <div class="purpose"><strong>When:</strong> Short quotes.</div>
+                <div class="example">He said &lt;q&gt;Hello&lt;/q&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;cite&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Citation.</div>
+                <div class="purpose"><strong>When:</strong> For references.</div>
+                <div class="example">&lt;cite&gt;The Great Gatsby&lt;/cite&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;code&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Inline code.</div>
+                <div class="purpose"><strong>When:</strong> For code snippets.</div>
+                <div class="example">Use &lt;code&gt;print()&lt;/code&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;pre&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Preformatted text.</div>
+                <div class="purpose"><strong>When:</strong> Code blocks.</div>
+                <div class="example">&lt;pre&gt;  def hello():&lt;/pre&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;abbr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Abbreviation.</div>
+                <div class="purpose"><strong>When:</strong> With title attribute.</div>
+                <div class="example">&lt;abbr title="HTML"&gt;HTML&lt;/abbr&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;address&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Contact info.</div>
+                <div class="purpose"><strong>When:</strong> For author details.</div>
+                <div class="example">&lt;address&gt;email@example.com&lt;/address&gt;</div>
+            </div>
+
+            <!-- Lists -->
+            <h4 class="mt-4 text-secondary">Lists</h4>
+
+            <div class="tag-card">
+                <code>&lt;ul&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Unordered (bullet) list.</div>
+                <div class="purpose"><strong>When:</strong> For items without order.</div>
+                <div class="example">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;ol&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Ordered (numbered) list.</div>
+                <div class="purpose"><strong>When:</strong> For sequential items.</div>
+                <div class="example">&lt;ol&gt;&lt;li&gt;Step 1&lt;/li&gt;&lt;/ol&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;li&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> List item.</div>
+                <div class="purpose"><strong>When:</strong> Inside ul or ol.</div>
+                <div class="example">&lt;li&gt;Apple&lt;/li&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;dl&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Definition list.</div>
+                <div class="purpose"><strong>When:</strong> Terms and definitions.</div>
+                <div class="example">&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Def&lt;/dd&gt;&lt;/dl&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;dt&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Term in definition list.</div>
+                <div class="purpose"><strong>When:</strong> Inside dl.</div>
+                <div class="example">&lt;dt&gt;HTML&lt;/dt&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;dd&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Definition description.</div>
+                <div class="purpose"><strong>When:</strong> After dt.</div>
+                <div class="example">&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;</div>
+            </div>
+
+            <!-- Links and Media -->
+            <h4 class="mt-4 text-secondary">Links and Media</h4>
+
+            <div class="tag-card">
+                <code>&lt;a&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Hyperlink.</div>
+                <div class="purpose"><strong>When:</strong> For navigation.</div>
+                <div class="example">&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;img&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Image.</div>
+                <div class="purpose"><strong>When:</strong> To display images.</div>
+                <div class="example">&lt;img src="photo.jpg" alt="Description"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;picture&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Multiple image sources.</div>
+                <div class="purpose"><strong>When:</strong> Responsive images.</div>
+                <div class="example">&lt;picture&gt;&lt;source srcset="large.jpg"&gt;&lt;img src="small.jpg"&gt;&lt;/picture&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;video&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Video.</div>
+                <div class="purpose"><strong>When:</strong> To play videos.</div>
+                <div class="example">&lt;video controls&gt;&lt;source src="movie.mp4"&gt;&lt;/video&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;audio&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Audio.</div>
+                <div class="purpose"><strong>When:</strong> To play audio.</div>
+                <div class="example">&lt;audio controls&gt;&lt;source src="song.mp3"&gt;&lt;/audio&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;source&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Media source.</div>
+                <div class="purpose"><strong>When:</strong> Inside picture, video, audio.</div>
+                <div class="example">&lt;source srcset="image.webp" type="image/webp"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;track&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Subtitles or captions.</div>
+                <div class="purpose"><strong>When:</strong> Inside video.</div>
+                <div class="example">&lt;track kind="captions" src="captions.vtt"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;iframe&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Embeds external page.</div>
+                <div class="purpose"><strong>When:</strong> For maps, videos.</div>
+                <div class="example">&lt;iframe src="https://example.com"&gt;&lt;/iframe&gt;</div>
+            </div>
+
+            <!-- Tables -->
+            <h4 class="mt-4 text-secondary">Tables</h4>
+
+            <div class="tag-card">
+                <code>&lt;table&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table.</div>
+                <div class="purpose"><strong>When:</strong> Tabular data.</div>
+                <div class="example">&lt;table&gt;...&lt;/table&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;thead&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table header group.</div>
+                <div class="purpose"><strong>When:</strong> Inside table.</div>
+                <div class="example">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;tbody&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table body group.</div>
+                <div class="purpose"><strong>When:</strong> Inside table.</div>
+                <div class="example">&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;tfoot&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table footer group.</div>
+                <div class="purpose"><strong>When:</strong> Inside table.</div>
+                <div class="example">&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;tr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table row.</div>
+                <div class="purpose"><strong>When:</strong> Inside table.</div>
+                <div class="example">&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;th&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Header cell.</div>
+                <div class="purpose"><strong>When:</strong> Inside tr.</div>
+                <div class="example">&lt;th&gt;Name&lt;/th&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;td&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Data cell.</div>
+                <div class="purpose"><strong>When:</strong> Inside tr.</div>
+                <div class="example">&lt;td&gt;John&lt;/td&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;caption&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Table caption.</div>
+                <div class="purpose"><strong>When:</strong> Inside table.</div>
+                <div class="example">&lt;caption&gt;Student List&lt;/caption&gt;</div>
+            </div>
+
+            <!-- Forms -->
+            <h4 class="mt-4 text-secondary">Forms</h4>
+
+            <div class="tag-card">
+                <code>&lt;form&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Form for user input.</div>
+                <div class="purpose"><strong>When:</strong> To collect data.</div>
+                <div class="example">&lt;form action="/submit" method="POST"&gt;...&lt;/form&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;input&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Input field.</div>
+                <div class="purpose"><strong>When:</strong> Inside form.</div>
+                <div class="example">&lt;input type="text" name="username"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;label&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Label for input.</div>
+                <div class="purpose"><strong>When:</strong> For accessibility.</div>
+                <div class="example">&lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input id="name"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;select&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Dropdown list.</div>
+                <div class="purpose"><strong>When:</strong> For options.</div>
+                <div class="example">&lt;select&gt;&lt;option&gt;Option&lt;/option&gt;&lt;/select&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;option&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Option in dropdown.</div>
+                <div class="purpose"><strong>When:</strong> Inside select.</div>
+                <div class="example">&lt;option value="1"&gt;One&lt;/option&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;optgroup&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups options.</div>
+                <div class="purpose"><strong>When:</strong> Inside select.</div>
+                <div class="example">&lt;optgroup label="Fruits"&gt;&lt;option&gt;Apple&lt;/option&gt;&lt;/optgroup&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;textarea&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Multi-line text input.</div>
+                <div class="purpose"><strong>When:</strong> For comments.</div>
+                <div class="example">&lt;textarea rows="4"&gt;&lt;/textarea&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;button&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Clickable button.</div>
+                <div class="purpose"><strong>When:</strong> Form submission.</div>
+                <div class="example">&lt;button type="submit"&gt;Send&lt;/button&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;fieldset&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups form elements.</div>
+                <div class="purpose"><strong>When:</strong> Inside form.</div>
+                <div class="example">&lt;fieldset&gt;&lt;legend&gt;Info&lt;/legend&gt;...&lt;/fieldset&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;legend&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Caption for fieldset.</div>
+                <div class="purpose"><strong>When:</strong> Inside fieldset.</div>
+                <div class="example">&lt;legend&gt;Details&lt;/legend&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;datalist&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Autocomplete suggestions.</div>
+                <div class="purpose"><strong>When:</strong> With input list attribute.</div>
+                <div class="example">&lt;input list="browsers"&gt;&lt;datalist id="browsers"&gt;&lt;option value="Chrome"&gt;&lt;/datalist&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;output&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Result of calculation.</div>
+                <div class="purpose"><strong>When:</strong> After user interaction.</div>
+                <div class="example">&lt;output name="result"&gt;0&lt;/output&gt;</div>
+            </div>
+
+            <!-- Interactive and Misc -->
+            <h4 class="mt-4 text-secondary">Interactive and Miscellaneous</h4>
+
+            <div class="tag-card">
+                <code>&lt;details&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Collapsible content.</div>
+                <div class="purpose"><strong>When:</strong> For expandable info.</div>
+                <div class="example">&lt;details&gt;&lt;summary&gt;More&lt;/summary&gt;&lt;p&gt;Details&lt;/p&gt;&lt;/details&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;summary&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Visible heading for details.</div>
+                <div class="purpose"><strong>When:</strong> Inside details.</div>
+                <div class="example">&lt;summary&gt;Click to expand&lt;/summary&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;dialog&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Dialog box.</div>
+                <div class="purpose"><strong>When:</strong> For modals.</div>
+                <div class="example">&lt;dialog open&gt;Hello&lt;/dialog&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;progress&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Progress bar.</div>
+                <div class="purpose"><strong>When:</strong> Loading status.</div>
+                <div class="example">&lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;meter&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Scalar measurement.</div>
+                <div class="purpose"><strong>When:</strong> Ratings, usage.</div>
+                <div class="example">&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;time&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Date or time.</div>
+                <div class="purpose"><strong>When:</strong> For machine-readable dates.</div>
+                <div class="example">&lt;time datetime="2026-06-26"&gt;June 26&lt;/time&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;canvas&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Graphics via JavaScript.</div>
+                <div class="purpose"><strong>When:</strong> For drawings.</div>
+                <div class="example">&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;svg&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Vector graphics.</div>
+                <div class="purpose"><strong>When:</strong> For icons, logos.</div>
+                <div class="example">&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" fill="red" /&gt;&lt;/svg&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;figure&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Groups media with caption.</div>
+                <div class="purpose"><strong>When:</strong> Images with captions.</div>
+                <div class="example">&lt;figure&gt;&lt;img src="chart.png"&gt;&lt;figcaption&gt;Chart&lt;/figcaption&gt;&lt;/figure&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;figcaption&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Caption for figure.</div>
+                <div class="purpose"><strong>When:</strong> Inside figure.</div>
+                <div class="example">&lt;figcaption&gt;Figure 1&lt;/figcaption&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;div&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Block container.</div>
+                <div class="purpose"><strong>When:</strong> Layout and styling.</div>
+                <div class="example">&lt;div class="container"&gt;...&lt;/div&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;span&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Inline container.</div>
+                <div class="purpose"><strong>When:</strong> Styling part of text.</div>
+                <div class="example">&lt;span style="color:red;"&gt;red&lt;/span&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;wbr&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Line break opportunity.</div>
+                <div class="purpose"><strong>When:</strong> Long words or URLs.</div>
+                <div class="example">Super&lt;wbr&gt;Long&lt;wbr&gt;Word</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;kbd&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Keyboard input.</div>
+                <div class="purpose"><strong>When:</strong> Shortcuts.</div>
+                <div class="example">Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;samp&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Sample output.</div>
+                <div class="purpose"><strong>When:</strong> Program output.</div>
+                <div class="example">&lt;samp&gt;Error 404&lt;/samp&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <code>&lt;var&gt;</code>
+                <div class="purpose"><strong>Purpose:</strong> Variable.</div>
+                <div class="purpose"><strong>When:</strong> Math or programming.</div>
+                <div class="example">&lt;var&gt;x&lt;/var&gt; = 10</div>
+            </div>
+
+            <!-- Summary -->
+            <div class="alert alert-success mt-4">
+                <strong>Total:</strong> 80+ HTML tags with purpose, usage, and examples.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <p><strong>iCD121 - IT Fundamentals</strong></p>
+        <p>Week 01 and 02 Course Work | Submitted by: Githmi Thathsarani</p>
+        <p>All Rights Reserved 2026</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

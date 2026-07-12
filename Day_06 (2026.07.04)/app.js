@@ -1,0 +1,211 @@
+///////////////////////////////////////////////////////////////////////////
+//-------------------Js wala Object  hadana pradana krama 2k----------------------//
+
+
+//--------1. Object Class hadala----------------//
+// class Customer{
+//     name;
+//     age;
+//     address;
+
+//     constructor(name, age, address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// }
+
+// let customer1 = new Customer("Sharadha", 20, "Bangalore");
+// console.log(customer1);
+
+// ---------------------------------------------
+
+//--------2. value eka assign karala object  hadala----------------//
+// let customer2 = {
+//     name: "John",
+//     age: 25,
+//     address: "New York",
+//     items: [                                 // array eka hadala object ekata assign karala thiyenawa
+//         {
+//             id: 1,
+//             name: 'variant1',
+//             price: 100,
+//             variants: [
+//                 {
+//                     id: 1,
+//                     name: 'variant1',
+//                     price: 100,
+//                 },
+//                 {
+//                     id: 2,
+//                     name: 'variant2',
+//                 }
+//             ]
+//         },
+//         {
+//             id: 2,
+//             name: 'variant2',
+//             price: 200
+//         }, {
+//             id: 3,
+//             name: 'variant3',
+//             price: 300
+//         }
+//     ], 
+//     farher: {                           // object ekak hadala object ekata assign karala thiyenawa🚀
+//         name: "Peter",
+//         age: 50,
+//         address: "New York"
+//     }
+
+// };
+// console.log(customer2.name);
+// console.log(customer2.age);
+// console.log(customer2.address);
+// console.log(customer2.items[0].variants[0].name);
+// console.log(customer2.farher.name);
+// console.log(customer2.farher.age);
+// console.log(customer2.farher.address);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//---------------------------Dom/ Dom maniqulation-------------------------
+//document.write("<h1>Hello World! </h1>");
+// console.log(document.title);
+// let heading = document.getElementById("heading");
+// COUNT = 0;
+
+// //heading.innerHTML = "Day 06 - Dom Manipulation";
+// function changeHeading() {
+//     COUNT++;
+//     heading.innerHTML = "Heading Changed!" + COUNT;
+//     console.log("Heading Changed!");
+    
+// }
+
+// function changeHeadingDOWN() {
+//     COUNT--;
+//     heading.innerHTML = "Heading Changed!" + COUNT;
+//     console.log("Heading Changed!");
+// }
+
+// let heading = document.getElementById("heading");
+
+// function changeHeading() {
+//     let txtInput = document.getElementById("inputText");
+//     heading.innerText= txtInput.value;
+//     console.log(txtInput.value);
+
+
+// }
+
+////////////////////////////////////////////////////////////
+
+// function changeHeading() {
+//     let txtInput = document.getElementById("inputText");
+//     let heading = document.getElementById("heading");
+//     heading.innerText= txtInput.value;
+//     console.log(txtInput.value);
+// }
+
+// function Addcalculate() {
+//     let num1 = parseInt(document.getElementById("inputText").value);
+//     let num2 = parseInt(document.getElementById("inputText").value);
+//     let result = num1 + num2;
+//     console.log(result);
+//     document.getElementById("Addition").value = result;
+// }
+
+// function Subtractcalculate() {
+//     let num1 = parseInt(document.getElementById("inputText").value);
+//     let num2 = parseInt(document.getElementById("inputText").value);
+//     let result = num1 - num2;
+//     console.log(result);
+//     document.getElementById("Subtraction").value = result;
+// }
+
+
+
+////////////////////////////////////////////////////////////////////
+
+// let customers = [];
+
+// function btnAddCustomerOnAction() {
+//     let txtName = document.getElementById("txtName").value;
+//     let txtAddress = document.getElementById("txtAddress").value;
+//     let txtAge = document.getElementById("txtAge").value;
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtSalary = document.getElementById("txtSalary").value;
+
+//     let customer = {
+//         name: txtName,
+//         address: txtAddress,
+//         age: txtAge,
+//         email: txtEmail,
+//         salary: txtSalary
+//     }
+
+//     customers.push(customer);
+//     console.log(customers);
+    
+// }
+
+
+///////////////////////////////////////////////////////////////////////
+
+// let customers = [];
+
+// function btnAddCustomerOnAction() { 
+// }
+
+// function btnViewCustomerOnAction() {
+//     let tblCustomer = document.getElementById("tblCustomer");
+//     tblCustomer.innerHTML += `<tr>
+//         <td>${customers[0].name}</td>
+//         <td>${customers[0].address}</td>
+//         <td>${customers[0].age}</td>
+//         <td>${customers[0].email}</td>
+//         <td>${customers[0].salary}</td>
+//     </tr>`;
+
+
+////////////////////////////////////////////////////////////////////////
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
+      
+}
+
+function loadTable(){
+    let tblCustomers = document.getElementById("tblCustomers");
+
+    tblCustomers.innerHTML+=`<tr>
+            <td>Saman</td>
+            <td>Walana</td>
+            <td>15</td>
+            <td>saman@email.com</td>
+            <td>750000</td>
+        </tr>`
+
+    console.log(tblCustomers);
+    
+}
+
