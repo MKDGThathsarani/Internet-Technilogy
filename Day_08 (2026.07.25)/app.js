@@ -23,3 +23,17 @@ console.log("Hi");
 // console.log(custName);
 
 ///////////////////////////////////////////////////////////////////////////////////
+
+
+let customer = {
+    name: "Nimal",
+    age: 25,
+    isActive: true,
+}
+
+let stringCustomer = JSON.stringify(customer);
+localStorage.setItem("customer", stringCustomer);
+
+let retCustomer = localStorage.getItem("customer");
+let jsonCustomer = JSON.parse(retCustomer);
+console.log(jsonCustomer);
