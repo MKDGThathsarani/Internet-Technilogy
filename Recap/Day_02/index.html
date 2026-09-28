@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Practice</title>
+    <style>
+        /* Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        /* Class Selector */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* ID Selector */
+        #special {
+            border: 2px solid blue;
+        }
+        
+        /* Button Style */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        /* Flexbox Layout */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
+    <h1>CSS Practice</h1>
     
+    <div class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is card 1.</p>
+            <button class="btn">Click Me</button>
+        </div>
+        
+        <div class="card" id="special">
+            <h2>Card 2</h2>
+            <p>This is card 2 (special).</p>
+            <button class="btn">Click Me</button>
+        </div>
+        
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This is card 3.</p>
+            <button class="btn">Click Me</button>
+        </div>
+    </div>
 </body>
 </html>
