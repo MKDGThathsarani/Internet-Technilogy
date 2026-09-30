@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1>JavaScript Practice</h1>
+    
+    <!-- HTML Elements -->
+    <p id="demo">Hello</p>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="calculate()">Calculate</button>
+    
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <button onclick="greet()">Greet</button>
+    <p id="greeting"></p>
+    
+    <script>
+        // 1. Variables
+        let name = "Kamal";
+        const age = 22;
+        var city = "Colombo";
+        
+        // 2. Functions
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Text Changed!";
+        }
+        
+        // 3. Calculate
+        function calculate() {
+            let a = 10;
+            let b = 5;
+            let sum = a + b;
+            alert("Sum: " + sum);
+        }
+        
+        // 4. User Input
+        function greet() {
+            let userName = document.getElementById("nameInput").value;
+            document.getElementById("greeting").innerHTML = "Hello, " + userName + "!";
+        }
+        
+        // 5. Arrays
+        let fruits = ["Apple", "Banana", "Orange"];
+        console.log("Fruits:", fruits);
+        console.log("First fruit:", fruits[0]);
+        
+        // 6. Objects
+        let student = {
+            name: "Kamal",
+            age: 22,
+            city: "Colombo"
+        };
+        console.log("Student:", student);
+        console.log("Student name:", student.name);
+        
+        // 7. Loop
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+        
+        // 8. Condition
+        let marks = 85;
+        if (marks >= 75) {
+            console.log("Grade: A");
+        } else if (marks >= 65) {
+            console.log("Grade: B");
+        } else {
+            console.log("Grade: C");
+        }
+    </script>
+</body>
+</html>
